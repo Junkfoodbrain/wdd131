@@ -22,12 +22,16 @@ p {
 nav {
     margin: 0 auto;
 }
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 1rem;
+}
 
-main {
-    margin: 0 auto;
+main {    
     text-align: left;
     border: 2px solid rgb(0 0 0 / .2);
-    padding: 10rem;
+    padding: 1rem;
     background-color: #eee;
 }
 
@@ -35,15 +39,14 @@ aside {
     width: 30%;
     padding: 2rem;
     margin: 0.5rem;
-    float: right;
+    
     font-style: italic;
     color: #29627e;
 }
 
-aside>p {
-    padding: 5rem;
-    #margin: -2rem;
-    background-color: yellow;
+aside p {
+    padding: 5rem;  
+    
 }
 
 .navigation {
