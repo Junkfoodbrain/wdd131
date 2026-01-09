@@ -33,16 +33,16 @@ main {
 }
 
 aside {
-    width: 30%;
+    width: 40%;
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
     #box-shadow: inset 5px 0 5px -5px #29627e;
     float: right;
     font-style: italic;
     color: #29627e;
 }
 
-aside p {
+aside > p {
     margin: -0.5rem;
     background-color: yellow;
 }
