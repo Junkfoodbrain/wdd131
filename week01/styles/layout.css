@@ -5,6 +5,7 @@
 
 body {
     font-family: acme, Arial, sans-serif;
+    grid-template-rows: 1;
 }
 
 h1 {
