@@ -34,9 +34,14 @@ main {
 aside {
     width: 40%;
     padding-left: 0.5rem;
+    box-shadow: inset 5px 0 5px -5px #29627e;
     float: right;
     font-style: italic;
     color: #29627e;
+}
+
+aside>p {
+    margin: 0.5rem;
 }
 
 .navigation {
