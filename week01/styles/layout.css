@@ -26,6 +26,7 @@ nav {
 
 main {
     margin: 1rem;
+    text-align: left;
     border: 1px solid rgb(0 0 0 / .2);
     padding: 1rem;
     background-color: #eee;
@@ -40,7 +41,7 @@ aside {
     color: #29627e;
 }
 
-aside>p {
+aside p {
     margin: 0.5rem;
 }
 
@@ -68,4 +69,8 @@ aside>p {
     font-weight: 700;
     text-decoration: underline;
     text-decoration-color: yellow;
+}
+
+footer {
+    
 }
