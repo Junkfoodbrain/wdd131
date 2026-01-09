@@ -31,6 +31,14 @@ main {
     background-color: #eee;
 }
 
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    float: right;
+    font-style: italic;
+    color: #29627e;
+}
+
 .navigation {
     list-style: none;
     display: flex;
