@@ -1,32 +1,63 @@
 header {
-  background-color: rgb(144, 144, 247);
+  background-color: rgb(52, 52, 115);
   text-align: center;
-  color: white;
+  color: white;  
 }
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  #font-weight: 700;
+  max-width: 1000px;
 }
 
 h1 {
-  font-weight: 100;
+  font-weight: 700;  
+  grid-column: 1/3;
+  text-align: center;
 }
 
-header span {
+#course-title {
   display: block;
-  justify-content: center;
+  padding: 1.5rem;
+  font-size: 2rem; 
 }
 
-nav {
-  margin: 0 auto;
+nav {  
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
+  padding: 1rem;  
 }
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: .5rem;  
+}
+
+main {
+  display: grid;  
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  background-color: rgb(52, 52, 115);
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+div {
+  padding: 1rem;
+}
+
 
 .card {
   background-color: white;
-  border: 0.25rem solid #ccc;
+  border: 1rem solid #ccc;
 }
 
 .card-content {
