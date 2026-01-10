@@ -1,6 +1,6 @@
 header {
   background-color: rgb(144, 144, 247);
-  text-align:center;
+  text-align: center;
   color: white;
 }
 
@@ -21,7 +21,7 @@ header span {
 nav {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;   
+  justify-content: space-around;
 }
 
 .card {
@@ -29,7 +29,7 @@ nav {
   border: 0.25rem solid #ccc;
 }
 
-.card-content{
+.card-content {
   padding: 1rem;
   flex: 1;
   margin: 0 auto;
@@ -38,7 +38,7 @@ nav {
 
 
 img.profilepic {
-  width: 150px;  
+  width: 150px;
   display: block;
   margin: 0 auto 15px auto;
 }
