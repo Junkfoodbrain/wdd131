@@ -6,7 +6,8 @@ header {
 
 body {
   font-family: "Lato", sans-serif;
-  #font-weight: 700;
+  font-weight: 400;
+  font-size: larger;
   max-width: 1000px;
 }
 
