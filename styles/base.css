@@ -1,0 +1,17 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+header>span {
+  display: block;
+}
+
+nav {
+  display: flex;
+  grid-column: 1/3;
+}
