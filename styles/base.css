@@ -56,21 +56,24 @@ div {
 
 .card {
   background-color: white;
-  border: 1rem solid #ccc;
+  border: 0.5rem solid #ccc;
 }
 
 .card-content {
   padding: 1rem;
   flex: 1;
   margin: 0 auto;
+  justify-content: auto;
 }
 
 img.profilepic {
   width: 150px;
-  display: block;
-  margin: 0 auto 15px auto;
-  float: right;  
+  display: block;  
+  float: right; 
+  padding: .5rem; 
 }
+
+
 
 footer {
   background-color: rgb(52, 52, 115);
