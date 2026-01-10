@@ -22,6 +22,7 @@ p {
 nav {
     margin: 0 auto;
 }
+
 .columns {
     display: grid;
     grid-template-columns: 1fr 300px;
