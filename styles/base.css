@@ -64,7 +64,7 @@ div {
   padding: 1rem;
   flex: 1;
   margin: 0 auto;
-  justify-content: auto;
+  justify-content: center;
 }
 
 img.profilepic {
