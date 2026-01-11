@@ -29,6 +29,11 @@ nav {
   padding: 1rem;  
 }
 
+nav:hover {
+  background-color: rgb(70, 70, 150);
+  font-size: larger;
+}
+
 nav a {
   text-decoration: none;
   color: white;
