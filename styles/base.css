@@ -29,7 +29,7 @@ nav {
   padding: 1rem;  
 }
 
-nav:hover {
+a:hover {
   background-color: rgb(70, 70, 150);
   font-size: larger;
 }
