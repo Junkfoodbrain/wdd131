@@ -91,9 +91,8 @@ img.ocean {
 }
 
  li {
-  padding: .5rem;
-  font-weight: 700;
-  padding: 1rem;
+  padding: 2rem;
+  font-weight: 700;  
   font-size: larger;
 }
 
