@@ -79,7 +79,7 @@ img.profilepic {
 }
 
 img.ocean {
-  width: 40%;  
+  width: 50%;  
   Display: block; 
   float: left;
   padding: .5rem;   
@@ -90,8 +90,6 @@ img.ocean {
   color: black;
   text-decoration: underline;
 }
-
-
 
 footer {
   background-color: rgb(52, 52, 115);
