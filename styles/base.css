@@ -72,10 +72,16 @@ div {
 }
 
 img.profilepic {
-  width: 150px;
+  width: 30%;
   display: block;  
   float: right; 
   padding: .5rem; 
+}
+
+img.ocean {
+  width: 40%;  
+  Display: block; 
+  float: left;   
 }
 
 
