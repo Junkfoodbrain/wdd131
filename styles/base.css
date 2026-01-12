@@ -91,6 +91,12 @@ img.ocean {
   text-decoration: underline;
 }
 
+li {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: larger;
+}
+
 footer {
   background-color: rgb(52, 52, 115);
   text-align: center;
