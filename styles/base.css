@@ -85,7 +85,11 @@ img.ocean {
   padding: .5rem;   
 }
 
-
+.california h2 {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
 
 
 
