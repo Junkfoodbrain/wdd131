@@ -81,8 +81,7 @@ img.profilepic {
 img.ocean {
   width: 50%;  
   Display: block; 
-  float: left;
-  padding: .25rem;   
+  float: left;  
 }
 
 .california h2 {
@@ -91,9 +90,10 @@ img.ocean {
   text-decoration: underline;
 }
 
-li {
-  padding: 1rem;
+ li {
+  padding: .5rem;
   font-weight: 700;
+  padding: 1rem;
   font-size: larger;
 }
 
