@@ -81,7 +81,12 @@ img.profilepic {
 img.ocean {
   width: 40%;  
   Display: block; 
-  float: left;   
+  float: left;
+  padding: .5rem;   
+}
+
+.california p {  
+  text-align: bottom;
 }
 
 
