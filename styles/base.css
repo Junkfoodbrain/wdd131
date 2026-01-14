@@ -98,12 +98,12 @@ p {
  li {
   padding: 2rem;
   font-weight: 400;  
-  font-size: larger;
+  font-size: 20px;
   color: whitesmoke;   
 }
 
 li:hover {  
-  font-size: 25px;
+  text-transform: uppercase;
 }
 
 ul a {
