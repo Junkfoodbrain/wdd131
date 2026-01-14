@@ -1,7 +1,7 @@
 header {
   background-color: rgb(52, 52, 115);
   text-align: center;
-  color: whitesmoke;  
+  color: whitesmoke;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-weight: 700;  
+  font-weight: 700;
   font-size: 3rem;
   grid-column: 1/3;
   text-align: center;
@@ -21,13 +21,13 @@ h1 {
 #course-title {
   display: block;
   padding: 1.5rem;
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
-nav {  
+nav {
   display: flex;
-  justify-content: space-around;  
-  padding: 1rem;  
+  justify-content: space-around;
+  padding: 1rem;
 }
 
 nav a:hover {
@@ -39,20 +39,20 @@ nav a {
   text-decoration: none;
   color: whitesmoke;
   font-weight: 400;
-  padding: .5rem;  
+  padding: .5rem;
 }
 
 main {
-  display: grid; 
-  background-color:rgb(100, 156, 158);
+  display: grid;
+  background-color: rgb(100, 156, 158);
 }
 
 h2 {
   font-weight: 700;
   text-align: center;
-  background-color: rgb(52, 52, 115);  
+  background-color: rgb(52, 52, 115);
   color: whitesmoke;
-  margin: 0 auto;  
+  margin: 0 auto;
 }
 
 div {
@@ -66,53 +66,53 @@ div {
 }
 
 .card-content {
-  padding: 1rem;  
+  padding: 1rem;
   margin: 0 auto;
   justify-content: left;
 }
 
 img.profilepic {
   width: 30%;
-  display: block;  
-  float: right; 
-  padding: .5rem; 
+  display: block;
+  float: right;
+  padding: .5rem;
 }
 
 img.ocean {
-  width: 50%;  
-  Display: block; 
+  width: 50%;
+  Display: block;
   float: left;
-  padding: .5rem;   
+  padding: .5rem;
 }
 
-.california h2 {  
+.california h2 {
   color: black;
   text-decoration: underline;
   background-color: rgb(100, 156, 158);
 }
 
 p {
-  padding: 1rem;  
+  padding: 1rem;
 }
 
- li {
+li {
   padding: 2rem;
-  font-weight: 400;  
+  font-weight: 400;
   font-size: 23px;
-  color: black;   
+  color: black;
 }
 
-li:hover {  
+li:hover {
   text-transform: uppercase;
 }
 
 ul a {
   color: black;
-  text-decoration: underline;  
+  text-decoration: underline;
 }
 
 footer {
   background-color: rgb(52, 52, 115);
   text-align: center;
-  color: whitesmoke;  
+  color: whitesmoke;
 }
