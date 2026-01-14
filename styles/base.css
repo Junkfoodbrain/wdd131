@@ -98,12 +98,17 @@ p {
  li {
   padding: 2rem;
   font-weight: 400;  
-  font-size: larger;   
+  font-size: larger;
+  color: whitesmoke;   
+}
+
+li:hover {  
+  font-size: 25px;
 }
 
 ul a {
-  color: whitesmoke;
-  text-decoration: none;  
+  color: black;
+  text-decoration: underline;  
 }
 
 footer {
