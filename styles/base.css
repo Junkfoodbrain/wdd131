@@ -75,14 +75,14 @@ img.profilepic {
   width: 30%;
   display: block;  
   float: right; 
-  padding: .75rem; 
+  padding: 1rem; 
 }
 
 img.ocean {
   width: 50%;  
   Display: block; 
   float: left;
-  padding: .5rem;   
+  padding: 1rem;   
 }
 
 .california h2 {  
