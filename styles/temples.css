@@ -43,8 +43,7 @@ h1 {
 }
 
 main {
-    max-width: 1700px;
-    /* margin: 0 auto; */
+    max-width: 1700px;    
     display: grid;
     background-color: rgb(132, 168, 168);
 }
