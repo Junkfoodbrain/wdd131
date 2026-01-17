@@ -4,13 +4,13 @@ const list = document.querySelector('#list');
 input.value = '';
 
 
-button.addEventListener('click', function () {
+button.addEventListener('click', function () {    
     const li = document.createElement('li');
     const deleteButton = document.createElement('button');
     li.textContent = input.value;
     deleteButton.textContent = "❌";
     li.appendChild(deleteButton);
-    list.append(li);
+    list.append(li);    
 });
 
 deletebutton.addEventListener('click', function () {
