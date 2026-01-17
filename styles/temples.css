@@ -17,6 +17,10 @@ nav a:hover {
     font-size:larger;
 }
 
+#album-title {    
+    font-size: 2rem;
+}
+
 
 main {
     max-width: 1700px;
