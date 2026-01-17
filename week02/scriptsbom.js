@@ -7,3 +7,4 @@ li.textContent = input.value;
 deleteButton.textContent = "❌";
 li.appendChild(deleteButton);
 list.append(li);
+
