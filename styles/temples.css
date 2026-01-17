@@ -1,4 +1,10 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 header {
     background-color: rgb(52, 52, 115);
@@ -7,25 +13,57 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;       
+    background-color:rgb(52, 52, 115);      
 }
 
-nav a {    
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation a { 
+    display: block;
+    padding: 1rem;
+    text-align: left;   
     text-decoration: none;
     color: whitesmoke;
     font-weight: 400;
-    padding: 1rem;
-    background-color: rgb(52, 52, 115);
+    transition: 0.5s;
+    font-size: 23px;    
 }
 
-nav ul {
-    list-style-type: none;
+.navigation li {
+    display: none;
 }
 
-nav a:hover {
-    background-color: rgb(70, 70, 150);
-    font-size:larger;
+.navigation a:hover, navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: rgb(132, 168, 168);
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "x";
 }
 
 #album-title {    
@@ -33,21 +71,18 @@ nav a:hover {
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: larger;
-    max-width: 1700px;
+    font-family: "Lato", sans-serif;   
 }
 
 h1 {
-    font-weight: 700;
-    font-size: 3rem;
-    grid-column: 1/3;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color:rgb(52, 52, 115);
+    color: whitesmoke;
     text-align: center;
 }
 
-main {
-    max-width: 1700px;    
+main {        
     display: grid;
     background-color: rgb(132, 168, 168);
 }
@@ -55,7 +90,7 @@ main {
 
 figure.temple {
     display: inline-block;
-    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 1rem;
     border: 0.5rem solid whitesmoke;
 }
