@@ -79,25 +79,23 @@ div {
   background-color: rgb(255 255 255);
   border: 1rem solid #ccc;  
   flex-direction: column;    
-  padding: 1rem;
+  padding: .5rem;
   font-size: 28px;
 }
 
-.card-content {
-  padding: 1rem;  
+.card-content {  
   justify-content: center;
 }
 
 img.profilepic { 
   height: auto;
-  display: block;  
-  /* padding: .5rem; */
+  display: block;    
 }
 
 img.ocean {  
   Display: block;
-  float: left;
-  padding: 2rem;
+  float: left;    
+  padding: 1rem;
 }
 
 .california h2 {
@@ -119,7 +117,7 @@ p {
 }
 
 li {
-  padding: 2rem;
+  padding: 1rem;
   font-weight: 400;  
   color: black;
   font-size: 28px;
