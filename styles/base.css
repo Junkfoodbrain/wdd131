@@ -44,7 +44,7 @@ nav a {
 
 main {
   display: grid;
-  background-color: rgb(100, 156, 158);
+  background-color: rgb(132, 168, 168);
 }
 
 h2 {
@@ -61,7 +61,7 @@ div {
 }
 
 .card {
-  background-color: rgb(100, 156, 158);
+  background-color: rgb(132, 168, 168);
   border: 1rem solid #ccc;  
   flex-direction: column;  
   margin: 3rem;
@@ -92,7 +92,7 @@ img.ocean {
 .california h2 {
   color: black;
   text-decoration: underline;
-  background-color: rgb(100, 156, 158);
+  background-color: rgb(132, 168, 168);
 }
 
 p {
