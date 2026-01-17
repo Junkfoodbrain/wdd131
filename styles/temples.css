@@ -6,8 +6,11 @@ header {
     color: whitesmoke;
 }
 
-nav a {
+nav {
     display: flex;
+}
+
+nav a {    
     text-decoration: none;
     color: whitesmoke;
     font-weight: 400;
