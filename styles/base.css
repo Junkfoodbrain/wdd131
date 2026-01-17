@@ -1,3 +1,8 @@
+
+
+
+
+
 header {
   background-color: rgb(52, 52, 115);
   text-align: center;
@@ -7,8 +12,7 @@ header {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: larger;
-  max-width: 1700px;
+  font-size: 28px;  
 }
 
 h1 {
@@ -44,7 +48,7 @@ nav a {
 
 main {
   display: grid;
-  background-color: rgb(132, 168, 168);
+  background-color: white;
 }
 
 h2 {
@@ -60,43 +64,58 @@ div {
   margin: .5rem;
 }
 
+.about p {
+  padding-bottom: 0;
+  margin: .5rem;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
-  background-color: rgb(132, 168, 168);
+  background-color: white;
   border: 1rem solid #ccc;  
-  flex-direction: column;  
-  margin: 3rem;
+  flex-direction: column;    
   padding: 1rem;
   font-size: 28px;
 }
 
 .card-content {
-  padding: 1rem;
-  margin: 0 auto;
+  padding: 1rem;  
   justify-content: center;
 }
 
-img.profilepic {
-  width: 30%;
-  display: block;
-  float: right;
-  padding: .5rem;
+img.profilepic { 
+  height: auto;
+  display: block;  
+  /* padding: .5rem; */
 }
 
-img.ocean {
-  width: 50%;
+img.ocean {  
   Display: block;
   float: left;
-  padding: .5rem;
+  padding: 2rem;
 }
 
 .california h2 {
   color: black;
   text-decoration: underline;
-  background-color: rgb(132, 168, 168);
+  background-color: white;
 }
 
+.california p {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
 p {
-  padding: 1rem;  
+  padding: 2rem;
+  margin: 0; 
 }
 
 li {
