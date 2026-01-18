@@ -88,14 +88,15 @@ nav {
     font-size: 2rem;
 }
 
-
-
-
 figure.temple {
     display: inline-block;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1rem;
     border: 0.5rem solid whitesmoke;
+}
+
+img {
+    max-height: 250px;
 }
 
 footer {
