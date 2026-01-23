@@ -14,8 +14,15 @@ header {
     background-color: rgb(52, 52, 115);
     text-align: center;
     color: whitesmoke;
+    font-size: 4rem;
+    border-bottom: .5rem solid orangered;
 }
 
+img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem;
+}
 
 
 footer {
