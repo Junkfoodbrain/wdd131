@@ -18,12 +18,36 @@ header {
     border-bottom: .5rem solid orangered;
 }
 
-img {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0rem;
+.hero img {
+    position: relative;
+    display: inline-block;
+    width: 100%;    
 }
 
+h2 {
+    background-color: orangered;    
+}
+ 
+
+.data {
+    position: absolute;
+    top:20%;
+    left: 5%;
+    background-color: rgba(245, 245, 245, 0.7);     
+}
+
+.climate {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+    background-color: rgba(245, 245, 245, 0.7);    
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem;
+    text-align: left;    
+}
 
 footer {
     background-color: rgb(52, 52, 115);
