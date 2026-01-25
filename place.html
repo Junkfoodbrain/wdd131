@@ -17,13 +17,18 @@
     <main>        
         <h1>A beautiful vacation destination...</h1>  
         <div class="hero">
-            <img srcset="images/santorini1.webp" alt="Santorini Island looking out toward the ocean on a sunny day">
-                <figure id="sculpture">
-                    <img srcset="images/sculpture.webp" alt="Beautiful Greek Sculpture">
-                </figure> 
-                <figure id="parthenon">
-                    <img srcset="images/parthenon.webp" alt="Photo of the parthenon, looking up from below">
-                </figure>
+            <img
+                src="images/santorini1.webp" 
+                srcset="images/santorini1.webp 480w,
+                        images/santorini1.webp 768w,
+                        images/santorini1.webp 1200w" 
+                sizes="(max-width: 480px) 100vw,
+                        (max-width: 768px) 100vw,
+                        100vw" 
+                alt="Santorini Island looking out toward the ocean on a sunny day">
+            <figure>
+                <img src="images/sculpture.webp">              
+            </figure>
         </div>         
             
     </main>
