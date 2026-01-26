@@ -26,8 +26,11 @@ header {
 }
 
 h2, h3 {
-    background-color: orangered;    
+    background-color: orangered;
+    padding: .5rem;    
 }
+
+
  
 
 .data {
@@ -37,11 +40,15 @@ h2, h3 {
     background-color: rgba(245, 245, 245, 0.7);     
 }
 
+
 .weather {
     position: absolute;
-    bottom: 15%;
-    right: 5%;
-    background-color: rgba(245, 245, 245, 0.7);          
+    bottom: 20%;
+    right: 5%;    
+    background-color: rgba(245, 245, 245, 0.7); 
+    img {
+        width: 20px;
+    }         
 }
 
 li {
@@ -55,4 +62,14 @@ footer {
     text-align: center;
     color: whitesmoke;
     padding: 1rem;
+}
+
+@media (max-width: 910px) {
+    .data {
+        position: static;
+    }
+
+    .weather {
+        position: static;
+    }
 }
