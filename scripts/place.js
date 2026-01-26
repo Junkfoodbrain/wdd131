@@ -24,8 +24,8 @@ function calculateWindChill(temperature, windSpeed, unit = 'C') {
         }
     }
 
-    // If conditions aren't met, return the original temperature
-    return temperature;
+    // If conditions aren't met, return "N/A"
+    return "N/A";
 }
 
 // Usage examples:
