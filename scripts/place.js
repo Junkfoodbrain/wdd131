@@ -3,7 +3,17 @@ today.getFullYear();
 document.getElementById("lastmodified").innerHTML = document.lastModified;
 
 
-// windchill fuction
+document.getElementById("windchill").innerHTML = calculateWindChill(28, 18, 'C').toFixed(1) + "&deg;C";
+
+// Wind chill calculation - only displays if temp <= 10°C and wind > 4.8 km/h
+const windChillResult = calculateWindChill(28, 18, 'C');
+if (windChillResult === "N/A") {
+    document.getElementById("windchill").innerHTML = "N/A";
+} else {
+    document.getElementById("windchill").innerHTML = windChillResult.toFixed(1) + "&deg;C";
+}
+
+// windchill function
 function calculateWindChill(temperature, windSpeed, unit = 'C') {
     // Validate inputs
     if (unit === 'C') {
@@ -28,7 +38,3 @@ function calculateWindChill(temperature, windSpeed, unit = 'C') {
     return "N/A";
 }
 
-// Usage examples:
-console.log(calculateWindChill(5, 10, 'C'));   // Celsius with wind
-console.log(calculateWindChill(40, 20, 'F'));  // Fahrenheit with wind
-console.log(calculateWindChill(15, 5, 'C'));   // Above 10°C, returns 15
