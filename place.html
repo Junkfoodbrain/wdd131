@@ -19,11 +19,12 @@
     <main>
         <!-- <h1>A beautiful vacation destination...</h1> -->
         <div class="hero">
-            <img src="images/santorini1.webp" srcset="images/santorini1.webp 480w,
-                        images/santorini1.webp 768w,
-                        images/santorini1.webp 1200w" sizes="(max-width: 480px) 100vw,
-                        (max-width: 768px) 100vw,
-                        100vw" alt="Santorini Island looking out toward the ocean on a sunny day">
+            <picture>
+                <source src="images/santorini1-large.webp" media="(min-width: 1000px)">
+                <source src="images/santorini1-medium.webp" media="(min-width: 550px)">
+                <img src="images/santorini1-small.webp"  alt="Santorini Island looking out toward the ocean on a sunny day"
+                width="400" height="200">
+            </picture>
             <div class="data">
                 <h2>Data</h2>
                 <ul>
