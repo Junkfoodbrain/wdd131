@@ -25,7 +25,7 @@ header {
     object-fit: cover; 
 }
 
-h2 {
+h2, h3 {
     background-color: orangered;    
 }
  
@@ -41,7 +41,7 @@ h2 {
     position: absolute;
     bottom: 15%;
     right: 5%;
-    background-color: rgba(245, 245, 245, 0.7);      
+    background-color: rgba(245, 245, 245, 0.7);          
 }
 
 li {
