@@ -46,9 +46,11 @@ h2, h3 {
     bottom: 20%;
     right: 5%;    
     background-color: rgba(245, 245, 245, 0.7); 
-    img {
-        width: 20px;
-    }         
+}
+
+.weather img, .weather svg {
+    width: 20px;
+    margin-top: 0.5rem;
 }
 
 li {
@@ -68,8 +70,8 @@ footer {
     .data {
         position: static;
     }
-
     .weather {
         position: static;
-    }
+        flex-direction: column;
+    }             
 }
