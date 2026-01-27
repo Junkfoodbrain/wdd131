@@ -1,21 +1,32 @@
+:root {
+    --primary-color: rgb(52,52,115);
+    --accent-color: orangered;
+    --light-bg: rgba(245,245,,245,0);
+    --font-family: "Alegreya SC", serif;
+    --border-width: 0.5rem;
+    --padding-base: 1rem;
+}
+
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 body {
-    font-family: "Alegreya SC", serif;
+    font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
 }
 
 header {
-    background-color: rgb(52, 52, 115);
+    background-color: var(--primary-color);
     text-align: center;
     color: whitesmoke;
     font-size: 4rem;
-    border-bottom: .5rem solid orangered;
+    border-bottom: var(--border-width) solid var(--accent-color);
 }
 
 .hero img {
@@ -26,18 +37,16 @@ header {
 }
 
 h2, h3 {
-    background-color: orangered;
-    padding: .5rem;    
+    background-color: var(--accent-color);
+    padding: 0.5rem;    
 }
 
-
- 
 
 .data {
     position: absolute;
     top:20%;
     left: 5%;
-    background-color: rgba(245, 245, 245, 0.7);     
+    background-color: var(--light-bg);     
 }
 
 
@@ -45,7 +54,7 @@ h2, h3 {
     position: absolute;
     bottom: 20%;
     right: 5%;    
-    background-color: rgba(245, 245, 245, 0.7); 
+    background-color: var(--light-bg); 
 }
 
 .weather img, .weather svg {
@@ -55,15 +64,15 @@ h2, h3 {
 
 li {
     list-style-type: none;
-    padding: 1rem;
+    padding: 1rvar(--padding-base);
     text-align: left;    
 }
 
 footer {
-    background-color: rgb(52, 52, 115);
+    background-color: var(--primary-color);
     text-align: center;
     color: whitesmoke;
-    padding: 1rem;
+    padding: 1remvar(--padding-base);
 }
 
 @media (max-width: 800px) {
