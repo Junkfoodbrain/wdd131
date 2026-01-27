@@ -40,14 +40,12 @@ h3 {
     padding: 0.5rem;
 }
 
-
 .data {
     position: absolute;
     top: 20%;
     left: 5%;
     background-color: var(--light-bg);    
 }
-
 
 .weather {
     position: absolute;
@@ -100,6 +98,11 @@ footer {
 
     .desktop-only {
         display: block;
+    }
+
+    .desktop-only::after {
+        background-color: var(--accent-color);
+
     }
 
     .weather img {
