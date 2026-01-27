@@ -1,7 +1,7 @@
 :root {
-    --primary-color: rgb(52,52,115);
+    --primary-color: rgb(52, 52, 115);
     --accent-color: orangered;
-    --light-bg: rgba(245,245,245,0.6);
+    --light-bg: rgba(245, 245, 245, 0.6);
     --font-family: "Alegreya SC", serif;
     --border-width: 0.5rem;
     --padding-base: 1rem;
@@ -29,41 +29,42 @@ header {
 
 .hero img {
     position: relative;
-    width: 100%; 
-    height: auto;  
-    object-fit: cover; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-h2, h3 {
+h2,
+h3 {
     background-color: var(--accent-color);
-    padding: 0.5rem;    
+    padding: 0.5rem;
 }
 
 
 .data {
     position: absolute;
-    top:20%;
+    top: 20%;
     left: 5%;
-    background-color: var(--light-bg);     
+    background-color: var(--light-bg);
 }
 
 
 .weather {
     position: absolute;
     bottom: 20%;
-    right: 5%;    
-    background-color: var(--light-bg); 
+    right: 5%;
+    background-color: var(--light-bg);
 }
 
-.weather img, .weather svg {
+.weather img {
+    display: block;
     width: 20px;
-    margin-top: 0.5rem;
 }
 
 li {
     list-style-type: none;
     padding: var(--padding-base);
-    text-align: left;    
+    text-align: left;
 }
 
 footer {
@@ -77,8 +78,31 @@ footer {
     .data {
         position: static;
     }
+
     .weather {
         position: static;
         flex-direction: column;
-    }             
+    }
+}
+
+.mobile-only {
+    display: block;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 801px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+
+    .weather img {
+        display: none;
+    }
 }
