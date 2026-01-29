@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazyload</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Leah Sorensen - Lazy Load Page">
-    <meta name="author" content="Leah's Lazy Load Page">
+    <title>Lazy Load Demonstration</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Lazy Load Page">
+    <meta name="author" content="Leah Sorensen">
     <link rel="stylesheet" href="styles/lazy.css">
     <script src="scripts/lazy.js" defer></script> 
 </head>
-<body>
+<body>          
+    <header>
+        <h1>Lazy Load Heading</h1>
+    </header>
     <main>
-        <h1></h1>
-        <img src="images/image1" alt="This is image 1">
+        <picture>
+            <img src="images/zakynthos.jpg/400/600" alt="Zakynthos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture></picture>
+        <picture></picture>
+        <picture></picture>
+        <picture></picture>
+        <picture></picture>  
     </main>
-    <footer>Footer</footer>
+    <footer>&copy; Leah Sorensen | BYU-Idaho | WDD 131 - Dynamic Web Fundamentals</footer>
     
 </body>
 </html>
