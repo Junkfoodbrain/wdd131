@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: rgb(132, 168, 168);
+    color: black;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    background-color: rgb(132, 168, 168);    
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: rgb(52, 52, 115);
+    text-align: center;
+    color: whitesmoke;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: rgb(132, 168, 168);
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: rgb(52, 52, 115);
+    display: flex;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+
+#album-title {    
+    font-size: 2rem;
+}
+
+figure.temple {
+    display: inline-block;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem;
+    border: 0.5rem solid whitesmoke;
+}
+
+img {
+    max-height: 250px;
+}
+
+footer {
+    background-color: rgb(52, 52, 115);
+    text-align: center;
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+
+/* Large */
+
+@media only screen and (min-width: 40em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
