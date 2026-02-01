@@ -13,6 +13,11 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
+function toggleActive(element) {
+    element.classList.toggle("active");
+}
+
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -100,10 +105,35 @@ const temples = [
 
 createTempleCard(temples);
 
+// old
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) < 2000));
+})
+
+// New
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) >= 2000));
+})
+
+// Large
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area >= 100000));
+})
+
+// Small
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 50000));
+})
+    
+
 
 function createTempleCard(filteredTemples) {
-    filteredTemples.foreEach(temple => {
-        let card = document.createElement('section');
+    filteredTemples.forEach(temple => {
+        let card = document.createElement("section");
         let name = document.createElement("h3");
         let location = document.createElement("p");
         let dedicated = document.createElement("p");
@@ -122,7 +152,7 @@ function createTempleCard(filteredTemples) {
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-        card.appendChild(image);
+        card.appendChild(img);
 
         document.querySelector('div.cards').appendChild(card);
     })
