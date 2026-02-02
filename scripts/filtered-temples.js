@@ -83,7 +83,7 @@ const temples = [
         dedicated: "1964, November, 17",
         area: 80157,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california/320x200/oakland-temple-lds-996681-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/oakland-california/400x250/oakland-temple-lds-996681-wallpaper.jpg"
     },
     {
         templeName: "Salt Lake Utah",
@@ -91,7 +91,7 @@ const temples = [
         dedicated: "1893, April, 6",
         area: 382207,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/320x200/slctemple7.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg"
     },
     {
         templeName: "Kyiv Ukraine",
@@ -99,10 +99,13 @@ const temples = [
         dedicated: "2010, August, 29",
         area: 22184,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/400x250/kyiv-ukraine-temple-exterior-1234567-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/400x250/kyiv-ukraine-temple-lds-736359-wallpaper.jpg"
     }, 
 ];
 
+function dedicatedYear(datestring) {
+    return parseInt(datestring.split(',')[0]);
+}
 createTempleCard(temples);
 
 // old
@@ -152,7 +155,7 @@ function createTempleCard(filteredTemples) {
         card.appendChild(location);
         card.appendChild(dedicated);
         card.appendChild(area);
-        card.appendChild(img);
+        card.appendChild(image);
 
         document.querySelector('div.cards').appendChild(card);
     })
