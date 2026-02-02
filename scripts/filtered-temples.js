@@ -103,19 +103,11 @@ const temples = [
     },
 ];
 
-function dedicatedYear(datestring) {
-    return parseInt(datestring.split(',')[0]);
-}
-
-// original
-createTempleCard(temples);
-
-// ai suggested change but there is still an error
-// function createTempleCard(filteredTemples) {
-//     document.querySelector('div.cards').innerHTML = '';
-//     filteredTemples.forEach(temple =>
-//         createTempleCard(temples));
+// function dedicatedYear(datestring) {
+//     return parseInt(datestring.split(',')[0]);
 // }
+
+
 
 // old
 const oldLink = document.querySelector("#old");
@@ -141,9 +133,9 @@ smallLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area < 10000));
 })
 
+createTempleCard();
 
-
-function createTempleCard(filteredTemples) {
+function createTempleCard() {
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
