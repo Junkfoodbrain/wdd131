@@ -41,7 +41,7 @@ const temples = [
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x250/payson-utah-temple-exterior-1416671-wallpaper.jpg"
     },
     {
         templeName: "Yigo Guam",
@@ -137,7 +137,7 @@ smallLink.addEventListener("click", () => {
 function createTempleCard(filteredTemples) {
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
         let location = document.createElement("p");
         let dedicated = document.createElement("p");
         let area = document.createElement("p");
@@ -150,6 +150,9 @@ function createTempleCard(filteredTemples) {
         image.setAttribute('src', temple.imageUrl);
         image.setAttribute('alt', `Image of ${temple.templeName} Temple`);
         image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "400");
+        image.setAttribute("height", "250");    
+        image.setAttribute("decoding", "async");
 
         card.appendChild(name);
         card.appendChild(location);
