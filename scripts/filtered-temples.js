@@ -18,6 +18,37 @@ function toggleActive(element) {
 }
 
 
+
+
+function dedicatedYear(datestring) {
+    return parseInt(datestring.split(',')[0]);
+}
+
+
+// old
+const oldLink = document.querySelector("#old");
+oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) < 2000));
+})
+
+// New
+const newLink = document.querySelector("#new");
+newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) >= 2000));
+})
+
+// Large
+const largeLink = document.querySelector("#large");
+largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area >= 90000));
+})
+
+// Small
+const smallLink = document.querySelector("#small");
+smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area < 10000));
+})
+
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -102,36 +133,6 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/400x250/kyiv-ukraine-temple-lds-736359-wallpaper.jpg"
     },
 ];
-
-function dedicatedYear(datestring) {
-    return parseInt(datestring.split(',')[0]);
-}
-
-
-// old
-const oldLink = document.querySelector("#old");
-oldLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) < 2000));
-})
-
-// New
-const newLink = document.querySelector("#new");
-newLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) >= 2000));
-})
-
-// Large
-const largeLink = document.querySelector("#large");
-largeLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area >= 90000));
-})
-
-// Small
-const smallLink = document.querySelector("#small");
-smallLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area < 10000));
-})
-
 
 createTempleCard(temples);
 
