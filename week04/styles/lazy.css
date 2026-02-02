@@ -9,10 +9,16 @@ main {
     flex-direction: column;
 }
 
-ing {
+img {
     width: 100%;
     background: black;
     animation: fade 15s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
 }
 
 @keyframes fade {
