@@ -91,16 +91,14 @@ nav {
 
 .cards {
     display: inline-block;    
-    grid-template-columns: 1fr;    
+    grid-template-columns: 1fr 1fr 1fr;    
     gap: 1rem;
     padding: 1rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-img {
-    max-height: 250px;
-}
+
 
 footer {
     background-color: rgb(52, 52, 115);

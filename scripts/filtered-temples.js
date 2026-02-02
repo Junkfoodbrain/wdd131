@@ -103,10 +103,12 @@ const temples = [
     },
 ];
 
-// function dedicatedYear(datestring) {
-//     return parseInt(datestring.split(',')[0]);
-// }
+function dedicatedYear(datestring) {
+    return parseInt(datestring.split(',')[0]);
+}
 
+
+// createTempleCard(temples);
 
 
 // old
@@ -133,9 +135,10 @@ smallLink.addEventListener("click", () => {
     createTempleCard(temples.filter(temple => temple.area < 10000));
 })
 
-createTempleCard();
 
-function createTempleCard() {
+createTempleCard(temples);
+
+function createTempleCard(filteredTemples) {
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
