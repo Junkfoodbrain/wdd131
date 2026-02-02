@@ -90,12 +90,12 @@ nav {
 }
 
 .cards {
-    display: inline-block;    
-    grid-template-columns: 1fr 1fr 1fr;    
+    display: grid;    
+    grid-template-columns: 1fr;    
     gap: 1rem;
     padding: 1rem;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 

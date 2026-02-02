@@ -108,9 +108,6 @@ function dedicatedYear(datestring) {
 }
 
 
-// createTempleCard(temples);
-
-
 // old
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
@@ -138,7 +135,8 @@ smallLink.addEventListener("click", () => {
 
 createTempleCard(temples);
 
-function createTempleCard(filteredTemples) {
+function createTempleCard(filteredTemples) { 
+    document.querySelector('div.cards').innerHTML = '';
     filteredTemples.forEach(temple => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
@@ -157,7 +155,7 @@ function createTempleCard(filteredTemples) {
         image.setAttribute("width", "400");
         image.setAttribute("height", "250");
         image.setAttribute("decoding", "async");
-
+        
         card.appendChild(name);
         card.appendChild(location);
         card.appendChild(dedicated);
