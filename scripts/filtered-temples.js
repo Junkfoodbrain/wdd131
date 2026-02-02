@@ -129,7 +129,7 @@ largeLink.addEventListener("click", () => {
 // Small
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area < 50000));
+    createTempleCard(temples.filter(temple => temple.area < 100000));
 })
     
 
