@@ -100,13 +100,22 @@ const temples = [
         area: 22184,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/400x250/kyiv-ukraine-temple-lds-736359-wallpaper.jpg"
-    }, 
+    },
 ];
 
 function dedicatedYear(datestring) {
     return parseInt(datestring.split(',')[0]);
 }
+
+// original
 createTempleCard(temples);
+
+// ai suggested change but there is still an error
+// function createTempleCard(filteredTemples) {
+//     document.querySelector('div.cards').innerHTML = '';
+//     filteredTemples.forEach(temple =>
+//         createTempleCard(temples));
+// }
 
 // old
 const oldLink = document.querySelector("#old");
@@ -129,9 +138,9 @@ largeLink.addEventListener("click", () => {
 // Small
 const smallLink = document.querySelector("#small");
 smallLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area < 100000));
+    createTempleCard(temples.filter(temple => temple.area < 50000));
 })
-    
+
 
 
 function createTempleCard(filteredTemples) {
@@ -151,7 +160,7 @@ function createTempleCard(filteredTemples) {
         image.setAttribute('alt', `Image of ${temple.templeName} Temple`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "400");
-        image.setAttribute("height", "250");    
+        image.setAttribute("height", "250");
         image.setAttribute("decoding", "async");
 
         card.appendChild(name);
