@@ -17,10 +17,8 @@ h1 {
     text-align: center;
 }
 
-main {
-    display: grid;
-    background-color: rgb(132, 168, 168);    
-    margin: 0 auto;
+main {    
+    background-color: rgb(132, 168, 168);   
 }
 
 
@@ -91,12 +89,27 @@ nav {
 
 .cards {
     display: grid;    
-    grid-template-columns: 1fr;    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));    
     gap: 1rem;
     padding: 1rem;
     max-width: 1000px;
-    margin: 0 auto;    
+    margin: 0 auto; 
+    justify-content: center;     
 }
+
+
+
+/* section {
+    box-sizing: border-box;
+    border: 0.25rem solid whitesmoke;     
+} */
+
+img {
+    width: 250px;
+    height: auto;    
+}
+
+
 
 
 

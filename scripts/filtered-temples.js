@@ -60,7 +60,7 @@ const temples = [
     },
     {
         templeName: "Manti Utah",
-        location: "Manti, Utah, United States",
+        location: "Manti, Utah, U.S.",
         dedicated: "1888, May, 21",
         area: 74792,
         imageUrl:
@@ -68,7 +68,7 @@ const temples = [
     },
     {
         templeName: "Payson Utah",
-        location: "Payson, Utah, United States",
+        location: "Payson, Utah, U.S.",
         dedicated: "2015, June, 7",
         area: 96630,
         imageUrl:
@@ -84,7 +84,7 @@ const temples = [
     },
     {
         templeName: "Washington D.C.",
-        location: "Kensington, Maryland, United States",
+        location: "Kensington, Maryland, U.S.",
         dedicated: "1974, November, 19",
         area: 156558,
         imageUrl:
@@ -110,7 +110,7 @@ const temples = [
 
     {
         templeName: "Oakland California",
-        location: "Oakland, California, United States",
+        location: "Oakland, California, U.S.",
         dedicated: "1964, November, 17",
         area: 80157,
         imageUrl:
@@ -118,7 +118,7 @@ const temples = [
     },
     {
         templeName: "Salt Lake Utah",
-        location: "Salt Lake City, Utah, United States",
+        location: "Salt Lake City, Utah, U.S.",
         dedicated: "1893, April, 6",
         area: 382207,
         imageUrl:
