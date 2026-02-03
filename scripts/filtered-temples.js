@@ -147,9 +147,9 @@ function createTempleCard(filteredTemples) {
         let image = document.createElement("img");
 
         name.textContent = temple.templeName;
-        location.innerHTML = `<span class-"label">Location:</span> ${temple.location}`;
-        dedicated.innerHTML = `<span class-"label">Dedicated:</span> ${temple.dedicated}`;
-        area.innerHTML = `<span class-"label">Area:</span> ${temple.area} sq ft`;
+        location.innerHTML = `<span class"label">Location:</span> ${temple.location}`;
+        dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
         image.setAttribute('src', temple.imageUrl);
         image.setAttribute('alt', `Image of ${temple.templeName} Temple`);
         image.setAttribute("loading", "lazy");
