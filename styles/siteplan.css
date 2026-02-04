@@ -1,0 +1,26 @@
+:root {
+    --primary-color: 607B79;
+    --accent-color: EF7E09;
+    --background-color: B89C79;
+    --light-bg: f7cc61;
+    --font-family: 'simonetta', serif;
+    --font-family-alt: 'zaina', sans-serif;
+    --border-width: 0.5rem;
+    --padding-base: 1rem;
+}
+
+nav {
+    background-color: var(--background-color);
+    text-align: center;
+    color: black;
+    font-size: 2.5rem;
+    border-bottom: var(--border-width) solid var(--accent-color);
+    font-family: var(--font-family);
+}
+
+footer {
+    background-color: var(--background-color);
+    text-align: center;
+    color: black;
+    padding: var(--padding-base);
+}
