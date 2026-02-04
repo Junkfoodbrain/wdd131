@@ -1,8 +1,8 @@
 :root {
-    --primary-color: 607B79;
-    --accent-color: EF7E09;
-    --background-color: B89C79;
-    --light-bg: f7cc61;
+    --primary-color: #607B79;
+    --accent-color: #EF7E09;
+    --background-color: #B89C79;
+    --light-bg: #f7cc61;
     --font-family: 'simonetta', serif;
     --font-family-alt: 'zaina', sans-serif;
     --border-width: 0.5rem;
@@ -10,12 +10,12 @@
 }
 
 nav {
-    background-color: var(--background-color);
+    background-color: #b89c79;
     text-align: center;
-    color: black;
-    font-size: 2.5rem;
-    border-bottom: var(--border-width) solid var(--accent-color);
-    font-family: var(--font-family);
+}
+
+div {
+    background-color: #b89c79;
 }
 
 footer {
