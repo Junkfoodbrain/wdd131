@@ -2,14 +2,19 @@
     --primary-color: #607B79;
     --accent-color: #EF7E09;
     --background-color: #B89C79;
-    --light-bg: #f7cc61;    
+    --light-bg: #f7cc61;          
     --border-width: 0.5rem;
     --padding-base: 1rem;
 }
 
-body {
+h1 {
     font-family: 'Simonetta', serif;      
 }
+
+li {
+    font-family: 'Zain', sans-serif;       
+}
+
 
 header {
     background-color: var(--background-color);    
