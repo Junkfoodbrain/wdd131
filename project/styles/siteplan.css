@@ -16,16 +16,17 @@ li {
 }
 
 header {
-    background-color: var(--background-color);    
+    background-color: var(--primary-color);    
 }
 
-.purpose {
-    color: var(--accent-color);
+body {
+    background-color: var(--background-color);
 }
+
 
 
 footer {
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     text-align: center;
     color: black;
     padding: var(--padding-base);
