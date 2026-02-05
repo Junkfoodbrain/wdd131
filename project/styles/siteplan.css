@@ -1,14 +1,24 @@
 :root {
-    --primary-color: #607B79;
+    /* --primary-color: #607B79; */
+    --primary-color: #87Aeab;
     --accent-color: #EF7E09;
-    --background-color: #B89C79;
+    /* --background-color: #B89C79; */
+    --background-color: #e9c69c;
     --light-bg: #f7cc61;          
     --border-width: 0.5rem;
     --padding-base: 1rem;    
 }
 
 h1 {
-    font-family: 'Simonetta', serif;      
+    font-family: 'Simonetta', serif; 
+    font-weight: 900;     
+}
+
+a {
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: inline-block;
 }
 
 li {
