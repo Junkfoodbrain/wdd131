@@ -1,7 +1,7 @@
 :root {
-    --color-primary: #2f1a98;
+    --color-primary: #1a4278;
     --color-secondary: #363cf4;
-    --color-background: #c6a9dd;
+    --color-background: #8b90a8;
     --color-text: black;
     --color-text-alt: whitesmoke;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,4 +10,10 @@
 h1, footer {
     background-color: var(--color-primary);
     color: var(--color-text-alt);
+}
+
+main {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-family);
 }
