@@ -25,8 +25,9 @@
                 </select>
                 <div class="star-rating">
                     <radio-group>
-                        <span>Rating:</span>
+                        <span>Overall Rating</span>
                         <label>
+                            <br>
                             <input type="radio" name="stars" id="star-a"value="1" required>
                             ⭐
                         </label>
@@ -52,7 +53,7 @@
                     <input type="date" id="install-date" name="install-date" required>
                 </div>
                 <div class="checkbox">
-                    <label>Which features did you find useful in the product? (Check all that apply)</label>                    
+                    <label>Which features did you find useful in the product? <br>(Check all that apply)<br></label>                    
                     <input type="checkbox" id="durability" name="durability" value="durability">
                     <label for="durability">Durability</label>
                     <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
@@ -63,18 +64,16 @@
                     <label for="design">Design</label>                
                 </div>
                 <div>
-                    <label>Written Review (Optional)</label>
+                    <label>Written Review (Optional)<br></label>
                     <textarea id="written-review" name="written-review" rows="4"></textarea>
                 </div>
                 <div>
-                    <label for="reviewer-name">Your Name (Optional)</label>
+                    <label for="reviewer-name">Your Name (Optional)<br></label>
                     <input type="text" id="reviewer-name" name="reviewer-name" required>
                 </div>
                 <button type="submit">Post Review</button>
-            </fieldset>            
+            </fieldset>  
 
-
-            
         </form>
     </main>
 
