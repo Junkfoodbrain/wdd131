@@ -28,7 +28,7 @@ function dedicatedYear(datestring) {
 // old
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) < 2000));
+    createTempleCard(temples.filter(temple => dedicatedYear(temple.dedicated) < 1900));
 })
 
 // New
