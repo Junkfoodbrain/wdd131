@@ -15,5 +15,5 @@ h1, footer {
 main {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: var(--font-family);
+    font-family: var(--font-family);    
 }
