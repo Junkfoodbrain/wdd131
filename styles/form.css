@@ -19,3 +19,7 @@ main {
     font-family: var(--font-family);  
     padding: 1rem;  
 }
+
+/* #checkbox label {
+    padding: 1rem;
+} */
