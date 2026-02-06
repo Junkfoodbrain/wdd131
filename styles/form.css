@@ -10,10 +10,12 @@
 h1, footer {
     background-color: var(--color-primary);
     color: var(--color-text-alt);
+    padding: .5rem;      
 }
 
 main {
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: var(--font-family);    
+    font-family: var(--font-family);  
+    padding: 1rem;  
 }
