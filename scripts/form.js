@@ -5,6 +5,20 @@ today.getFullYear();
 
 document.getElementById("lastmodified").innerHTML = document.lastModified;
 
+// visits counter
+
+let visits = Number(window.localStorage.getItem("visits-ls"));
+
+if (visits !== 0) { 
+    visits += 1;
+} else {
+    visits = 1;
+}
+
+window.localStorage.setItem("visits-ls", visits);
+
+document.querySelector(".visits").textContent = visits;
+
 // product array
 const products = [
     {
