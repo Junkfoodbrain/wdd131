@@ -12,7 +12,7 @@ h1, footer {
     color: var(--color-text-alt);
     padding: .5rem; 
     margin: 0 auto;
-    text-align: center;     
+    text-align: center;      
 }
 
 #product-name {
@@ -39,6 +39,11 @@ div {
      
 }
 
+.star-rating span {
+    flex-basis: 100%;
+    margin-bottom: 0.5rem;    
+}
+
 .star-rating label {
     display: flex;
     flex-direction: column-reverse;
@@ -50,11 +55,9 @@ div {
 }
 
 
- @media (max-width: 400px){
-    .star-rating {
-        /* display: flex; */
-        flex-direction: column;
-        /* flex-wrap: wrap;                               */
+ @media (max-width: 600px){
+    .star-rating {        
+        flex-direction: column;        
         align-items: flex-start;
     }
 
@@ -63,15 +66,8 @@ div {
         order: -1;
     }
 
-    .star-rating label {
-            /* display: flex;
-            flex-direction: row-reverse;
-            align-items: flex-start;
-            justify-content: center;
-            flex: 1;
-            justify-content: center;
-            gap: 0.5rem;
-            font-size: 0.5rem; */
+    .star-rating label { 
+            align-items: flex-start;          
             flex: none;
         }
 }
