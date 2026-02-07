@@ -45,21 +45,47 @@ div {
     font-size: 0.5rem;    
 }
 
-
-@media (min-width: 400px){
-    .star-rating {
+/* smaller viewport
+/* @media (max-width: 400px){
+    /* .star-rating {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;                              
-        align-items: flex-end;
-    }
+        align-items: flex-start;
+    } */
 
-    .star-rating span {
+    /* .star-rating span {
         flex-basis: 100%;
         order: -1;
     }
 
     .star-rating label {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            justify-content: center;
+            flex: 1;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.5rem;
+        }
+} */ 
+
+/* larger viewport */
+@media (min-width: 401px){
+    .star-rating {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+    
+        .star-rating span {
+            flex-basis: 100%;
+            order: -1;
+        }
+    
+        .star-rating label {
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
