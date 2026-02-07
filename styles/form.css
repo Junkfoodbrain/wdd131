@@ -45,16 +45,16 @@ div {
     font-size: 0.5rem;    
 }
 
-/* smaller viewport
-/* @media (max-width: 400px){
-    /* .star-rating {
+
+ @media (max-width: 400px){
+    .star-rating {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;                              
         align-items: flex-start;
-    } */
+    }
 
-    /* .star-rating span {
+    .star-rating span {
         flex-basis: 100%;
         order: -1;
     }
@@ -69,9 +69,10 @@ div {
             gap: 0.5rem;
             font-size: 0.5rem;
         }
-} */ 
+}
 
 /* larger viewport */
+
 @media (min-width: 401px){
     .star-rating {
             display: flex;
