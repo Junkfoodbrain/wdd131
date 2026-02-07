@@ -24,6 +24,6 @@ h1, footer {
     padding: 1rem;
 } */
 
-@media {
-
+@media (min-width: 400px){
+    
 }
