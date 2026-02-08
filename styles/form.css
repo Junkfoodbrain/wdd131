@@ -32,6 +32,10 @@ div {
     margin-bottom: 1rem;
 }
 
+#star-a {
+    align-items: center;
+}
+
 
 .optional {
     color: var(--color-secondary);
