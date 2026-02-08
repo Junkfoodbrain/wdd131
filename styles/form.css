@@ -32,6 +32,8 @@ div {
     margin-bottom: 1rem;
 }
 
+
+
 #star-a {
     align-items: center;
 }
@@ -68,6 +70,8 @@ div {
     font-size: 0.5rem;    
 }
 
+
+
 span.label, span.visits {
     display: block;
     text-align: center;
@@ -90,6 +94,8 @@ span.label, span.visits {
             align-items: flex-start;          
             flex: none;
         }
+
+  
 }
 
 
