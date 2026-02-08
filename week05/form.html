@@ -25,24 +25,24 @@
                 </select>
                 <div class="star-rating">                    
                         <span>Overall Rating</span>
-                        <label>                            
+                        <label for="star-a">                           
                             <input type="radio" name="stars" id="star-a"value="1" required>
                             ⭐
                         </label>
-                        <label>
-                            <input type="radio" name="stars" id="star-b" value="2">
+                        <label for="star-b">
+                            <input type="radio" name="stars" id="star-b" value="2" required>
                             ⭐⭐
                         </label>
-                        <label>
-                            <input type="radio" name="stars" id="star-c" value="3">
+                        <label for="star-c">
+                            <input type="radio" name="stars" id="star-c" value="3" required>
                             ⭐⭐⭐
                         </label>
-                        <label>
-                            <input type="radio" name="stars" id="star-d" value="4">
+                        <label for="star-d">
+                            <input type="radio" name="stars" id="star-d" value="4" required>
                             ⭐⭐⭐⭐
                         </label>
-                        <label>
-                            <input type="radio" name="stars" id="star-e" value="5">
+                        <label for="star-e">
+                            <input type="radio" name="stars" id="star-e" value="5" required>
                             ⭐⭐⭐⭐⭐
                         </label>
                 </div>
@@ -51,8 +51,8 @@
                     <input type="date" id="install-date" name="install-date" required>
                 </div>
                 <div class="checkbox">
-                    <label>Which features did you find useful in the product? <br>(Check all that apply)<br></label>                    
-                    <input type="checkbox" id="durability" name="durability" value="durability">
+                    <label>Which features did you find useful in the product? <span class="notbold"><br>(Check all that apply)<br></span></label>                    
+                    <input type="checkbox" id="durability" name="durability" value="durability" >
                     <label for="durability">Durability</label>
                     <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
                     <label for="ease-of-use">Ease of Use</label>
@@ -62,11 +62,11 @@
                     <label for="design">Design</label>                
                 </div>
                 <div>
-                    <label>Written Review (Optional)<br></label>
+                    <label>Written Review <span class="optional">(Optional)</span><br></label>
                     <textarea id="written-review" name="written-review" rows="4"></textarea>
                 </div>
                 <div class="name">
-                    <label for="reviewer-name">Your Name (Optional)<br></label>
+                    <label for="reviewer-name">Your Name <span class="optional">(Optional)</span><br></label>
                     <input type="text" id="reviewer-name" name="reviewer-name" required>
                 </div>
                 <button type="submit">Post Review</button>
