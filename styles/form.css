@@ -20,7 +20,7 @@ h1, footer {
     margin-bottom: 1rem;    
 }
 
-fieldset {
+form {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: var(--font-family);  
