@@ -1,6 +1,6 @@
 :root {
     --color-primary: #1a4278;
-    --color-secondary: #363cf4;
+    --color-secondary: #0e15f1;
     --color-background: #989baf;
     --color-text: black;
     --color-text-alt: whitesmoke;
@@ -38,8 +38,7 @@ div {
 }
 
 .notbold {
-    font-weight: normal;
-    color: whitesmoke;
+    font-weight: normal;    
 }
 
 
