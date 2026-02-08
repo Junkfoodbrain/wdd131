@@ -150,9 +150,7 @@ span.label, span.visits {
 
     .checkbox label[for] {
         padding-left: 0.5rem;
-    }
-
-    
+    }    
 
     button {
         display: flex;
