@@ -7,17 +7,21 @@ document.getElementById("lastmodified").innerHTML = document.lastModified;
 
 // visits counter
 
-let visits = Number(window.localStorage.getItem("visits-ls"));
+let visits = Number(window.localStorage.getItem("visits-ls")) || 0;
 
 if (visits !== 0) { 
     visits += 1;
-} else {
+ } else {
     visits = 1;
 }
 
 window.localStorage.setItem("visits-ls", visits);
 
-document.querySelector(".visits").textContent = visits;
+
+const visitsE1 = document.querySelector(".visits");
+if (visitsE1) {
+    visitsE1.textContent = visits;
+}
 
 // product array
 const products = [
