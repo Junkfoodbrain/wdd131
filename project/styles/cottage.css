@@ -1,10 +1,134 @@
 :root {
-    /* --primary-color: #607B79; */
     --primary-color: #87Aeab;
     --accent-color: #EF7E09;
-    /* --background-color: #B89C79; */
     --background-color: #e9c69c;
     --light-bg: #f7cc61;
     --border-width: 0.5rem;
     --padding-base: 1rem;
+    --heading-font: 'Simonetta', serif, 'lato', sans-serif;
+    --body-font: 'Zain', sans-serif, 'Arial', sans-serif;
+}
+
+
+header {
+    background-color: var(--primary-color);
+}
+
+#cottage-title {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    color: black;
+    font-size: 2rem;
+    padding: var(--padding-base);
+    text-align: center;
+}
+
+/* navigation hamburger button */
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+aside {
+    background-color: var(--light-bg);
+    padding: 10px;
+    border-right: 2px solid black;
+}
+
+.hero {
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: black;
+}
+
+/* larger screen navigation menu*/
+@media only screen and (min-width: 40em) {
+
+    #cottage-title {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
 }
