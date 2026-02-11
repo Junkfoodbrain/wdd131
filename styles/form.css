@@ -46,6 +46,14 @@ div {
     justify-content: left;
 }
 
+.required::after {
+    content: "*";
+    color: red;
+    font-weight: bold;
+}
+
+
+
 
 #star-a {
     align-items: center;
