@@ -47,12 +47,9 @@ div {
 
 .required::after {
     content: "*";
-    color: red;
+    color: rgb(119, 4, 4);
     font-weight: bold;
 }
-
-
-
 
 #star-a {
     align-items: center;
@@ -106,9 +103,6 @@ div {
     justify-content: space-around;
     margin-top: .5rem;
 }
-
-
-
 
 #written-review {
     display: flex;
