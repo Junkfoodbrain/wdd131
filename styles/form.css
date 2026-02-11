@@ -47,7 +47,7 @@ div {
 
 .required::after {
     content: "*";
-    color: rgb(119, 4, 4);
+    color: rgb(143, 4, 4);
     font-weight: bold;
 }
 
