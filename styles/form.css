@@ -17,9 +17,7 @@ footer {
     text-align: center;
 }
 
-#product-name {
-    margin-bottom: 1rem;
-}
+
 
 form {
     background-color: var(--color-background);
@@ -37,6 +35,7 @@ div {
     display: flex;
     width: 100%;
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 #install-date {
