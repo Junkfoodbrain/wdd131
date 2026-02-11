@@ -17,3 +17,64 @@ function toggleActive(element) {
 }
 
 
+const breads = [
+    {
+        breadName: "Sweet Potato Round",
+        price: "$18.00",
+        category: "Bread",
+        Type: "Seasonal",
+        imageUrl: "sweetpotato.jpg",
+    },
+    {
+        breadName: "Sourdough Round",
+        price: "$15.00",
+        category: "Bread",
+        Type: "regular",
+        imageUrl: "sourdough.jpg",
+    },
+    { 
+        breadName: "Sourdough Loaf",
+        price: "$15.00",
+        category: "Bread",  
+        Type: "regular",
+        imageUrl: "sourdoughloaf.jpg",
+    },
+    {
+        breadName: "Sourdough Cinnamon Rolls",
+        price: "$15.00",
+        category: "Bread",
+        Type: "Seasonal",
+        imageUrl: "sourdoughcinnamonrolls.jpg",
+    }
+]
+
+createBreadcard(breads);
+
+function createBreadcard(filteredBreads) {
+    document.querySelector ('div.cards').innerHTML = "";
+    filteredBreads.forEach(bread => {
+        let card = document.createElement('section');
+        let name = document.createElement("h2");
+        let price = document.createElement("p");
+        let category = document.createElement("p");
+        let image = document.createElement("img");
+        
+        name.textContent = bread.breadName;
+        price.innerHTML = `<strong>Price:</strong> ${bread.price}`;
+        category.innerHTML = `<strong>Category:</strong> ${bread.category}`;
+        image.setAttribute('src', bread.imageUrl);
+        image.setAttribute('alt', `Image of ${bread.breadName}`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '400');
+        image.setAttribute('height', '250');
+        image.setAttribute('decoding', 'async');
+
+        card.appendChild(image);
+        card.appendChild(name);
+        card.appendChild(price);
+        card.appendChild(category);
+
+
+        document.querySelector('div.cards').appendChild(card);
+    });
+}
