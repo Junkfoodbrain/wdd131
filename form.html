@@ -18,12 +18,12 @@
     </header>
     <main>   
         <form method="get" action="review.html">
-            <label for="product-name">Product Name</label>
+            <label for="product-name">Product Name <span style="color: rgb(150, 1, 1)">*</span></label>
             <select id="product-name" name="product-name" required>
                 <option value="" disabled selected>Select a product</option>                    
             </select>
             <div class="star-rating">                    
-                    <span>Overall Rating</span>
+                    <span>Overall Rating <span style="color: rgb(150, 1, 1)">*</span></span>
                     <label for="star-a">                           
                         <input type="radio" name="stars" id="star-a" value="1" required>
                         ⭐
@@ -46,19 +46,25 @@
                     </label>
             </div>
             <div class="install-date">
-                <label for="install-date">Date of Installation</label>
+                <label for="install-date">Date of Installation<span style="color: rgb(150, 1, 1)">*</span></label>
                 <input type="date" id="install-date" name="install-date" required>
             </div>
             <div class="checkbox">
-                <label>Which features did you find useful in the product? <span class="notbold"><br>(Check all that apply)<br></span></label>                    
-                <input type="checkbox" id="durability" name="durability" value="durability" >
-                <label for="durability">Durability</label>
-                <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
-                <label for="ease-of-use">Ease of Use</label>
-                <input type="checkbox" id="performance" name="performance" value="performance">
-                <label for="performance">Performance</label>
-                <input type="checkbox" id="design" name="design" value="design">
-                <label for="design">Design</label>                
+                <label>Which features did you find useful in the product? <span style="color: rgb(150, 1, 1)">*</span><span class="notbold"><br>(Check all that apply)<br></span></label> 
+                    <div class="input">                    
+                    <label for="durability">Durability
+                        <input type="checkbox" id="durability" name="durability" value="durability">
+                    </label>                    
+                    <label for="ease-of-use">Ease of Use
+                        <input type="checkbox" id="ease-of-use" name="ease-of-use" value="ease-of-use">
+                    </label>
+                    <label for="performance">Performance
+                        <input type="checkbox" id="performance" name="performance" value="performance">
+                    </label>
+                    <label for="design">Design
+                        <input type="checkbox" id="design" name="design" value="design">
+                    </label>
+                    </div>                  
             </div>
             <div>
                 <label for="written-review">Written Review <span class="optional">(Optional)</span><br></label>
