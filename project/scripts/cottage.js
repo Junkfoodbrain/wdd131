@@ -15,35 +15,45 @@ hambutton.addEventListener('click', () => {
 function toggleActive(element) {
     element.classList.toggle("active");
 }
+// bread
+const breadlink = document.querySelector("#bread");
+breadlink.addEventListener("click", () => {
+    createBreadcard(breads.filter(bread => bread.category === "Bread"));
+})
+
+const treatslink = document.querySelector("#treats");
+treatslink.addEventListener("click", () => {
+    createBreadcard(breads.filter(bread => bread.category === "Treats"));
+})
+
+const seasonalLink = document.querySelector("#seasonal");
+seasonalLink.addEventListener("click", () => {
+    createBreadcard(breads.filter(bread => bread.category === "Seasonal"));
+})  
 
 
 const breads = [
     {
         breadName: "Sweet Potato Round",
         price: "$18.00",
-        category: "Bread",
-        Type: "Seasonal",
+        category: "Treats",        
         imageUrl: "sweetpotato.jpg",
     },
     {
         breadName: "Sourdough Round",
         price: "$15.00",
-        category: "Bread",
-        Type: "regular",
+        category: "Bread",        
         imageUrl: "sourdough.jpg",
     },
     { 
         breadName: "Sourdough Loaf",
         price: "$15.00",
-        category: "Bread",  
-        Type: "regular",
+        category: "Bread",        
         imageUrl: "sourdoughloaf.jpg",
     },
     {
         breadName: "Sourdough Cinnamon Rolls",
-        price: "$15.00",
-        category: "Bread",
-        Type: "Seasonal",
+        price: "$15.00",               
         imageUrl: "sourdoughcinnamonrolls.jpg",
     }
 ]
