@@ -21,11 +21,13 @@ breadlink.addEventListener("click", () => {
     createBreadcard(breads.filter(bread => bread.category === "Bread"));
 })
 
+// Treats
 const treatslink = document.querySelector("#treats");
 treatslink.addEventListener("click", () => {
     createBreadcard(breads.filter(bread => bread.category === "Treats"));
 })
 
+// Seasonal
 const seasonalLink = document.querySelector("#seasonal");
 seasonalLink.addEventListener("click", () => {
     createBreadcard(breads.filter(bread => bread.category === "Seasonal"));
