@@ -85,13 +85,15 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
 }
 
 aside {
     background-color: var(--light-bg);
     padding: 10px;
     border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
