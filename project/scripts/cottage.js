@@ -38,27 +38,39 @@ const breads = [
     {
         breadName: "Sweet Potato Round",
         price: "$18.00",
-        category: "Treats",        
-        imageUrl: "sweetpotato.jpg",
+        category: "Seasonal",        
+        imageUrl: "images/sweetpotato.webp",
     },
     {
         breadName: "Sourdough Round",
         price: "$15.00",
         category: "Bread",        
-        imageUrl: "sourdough.jpg",
+        imageUrl: "images/largeround.webp",
+    },
+    {
+        breadName: "Mini Rounds(2)",
+        price: "$15.00",
+        category: "Bread",
+        imageUrl: "images/smallrounds.webp",
     },
     { 
         breadName: "Sourdough Loaf",
         price: "$15.00",
         category: "Bread",        
-        imageUrl: "sourdoughloaf.jpg",
+        imageUrl: "images/sourdoughloaf.webp",
     },
     {
         breadName: "Sourdough Cinnamon Rolls",
-        price: "$15.00",               
-        imageUrl: "sourdoughcinnamonrolls.jpg",
-    }
-]
+        price: "$15.00", 
+        category: "Treats",
+        imageUrl: "images/sourdoughcinnamonrolls.webp",        
+    },
+    {
+        breadName: "Cake Pops",
+        price: "$12.00", 
+        category: "Treats",
+        imageUrl: "images/cakepops.webp",
+    },]
 
 createBreadcard(breads);
 
