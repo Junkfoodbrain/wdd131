@@ -15,6 +15,26 @@ hambutton.addEventListener('click', () => {
 function toggleActive(element) {
     element.classList.toggle("active");
 }
+
+// setting up orders counter
+let orders = Number(window.localStorage.getItem("orders-ls")) || 0;
+
+if (orders !== 0) {
+    orders += 1;
+} else {
+    orders = 1;
+}
+
+window.localStorage.setItem("orders-ls", orders);
+
+
+const ordersE1 = document.querySelector(".orders");
+if (ordersE1) {
+    ordersE1.textContent = orders;
+}
+
+
+
 // bread
 const breadlink = document.querySelector("#bread");
 breadlink.addEventListener("click", () => {

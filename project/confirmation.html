@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Final Project- Confirmation Page</title>
-    <meta name="description" content="WDD 131 - Apricot-Cottage - Confirmation Page">
+    <title>WDD 131 - Final Project- Order Confirmation Page</title>
+    <meta name="description" content="WDD 131 - The Apricot Cottage - Order Confirmation Page">
     <meta name="author" content="Leah Sorensen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +16,30 @@
 
 <body>
     <header>
+        <img src="images/house.png" class="house" alt="Icon image of a house, representing the home-based bakery">
+        <span id="cottage-title">The Apricot Cottage</span>
+
+        <a id="menu" href="#" aria-label="Open menu"></a>
         <nav>
-            <a href="cottage.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="bread.html">Bread</a>
-            <a href="treats.html">Treats</a>
-            <a href="seasonal.html">Seasonal</a>
-            <a href="order.html">Order</a>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="bread">Bread</a></li>
+                <li><a href="#" id="treats">Treats</a></li>
+                <li><a href="#" id="seasonal">Seasonal</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <h1 class="thank-you">Thank you for being a valued customer!</h1>
+        <p><span class="confirmation">Your order confirmation number is: 🍞</span>
+            <span class="orders"></span>
+        </p>
+    </main>
     <footer>
         <p>&copy; 2026 Leah Sorensen - California 🌴</p>
-        <p>Last Modified: <span id="lastmodified"></span></p>
+        <p>The Apricot Cottage - WDD 131 | Final Project</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>        
     </footer>
 </body>
 

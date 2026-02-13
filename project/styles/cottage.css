@@ -126,8 +126,8 @@ aside {
     top: 10%;
     left: 10%;
     font-size: 3rem;
-    color: whitesmoke;
-    text-shadow: 2px 2px 4px #000000;
+    color: whitesmoke;    
+    text-shadow: 4px 4px 4px black;
 }
 
 
@@ -141,6 +141,15 @@ aside {
 .cards img {
     width: 200px;
     height: auto;    
+}
+
+
+span.confirmation,
+span.orders {
+    display: block;    
+    font-size: 1.5rem;
+    margin: 1.5rem;        
+    text-align: center;
 }
 
 
