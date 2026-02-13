@@ -6,7 +6,7 @@
     --border-width: 0.5rem;
     --padding-base: 1rem;
     --heading-font: 'Simonetta', serif, 'lato', sans-serif;
-    --body-font: 'Zain', sans-serif, 'Arial', sans-serif;
+    --body-font: 'Zain', sans-serif, 'Arial', sans-serif; 
 }
 
 
@@ -21,6 +21,13 @@ header {
     font-size: 2rem;
     padding: var(--padding-base);
     text-align: center;
+}
+
+.house {
+    position: relative;
+    width: 5em;             
+    left: 10px;
+    top: 20px;
 }
 
 /* navigation hamburger button */
@@ -59,9 +66,9 @@ nav {
     text-align: left;
     text-decoration: none;
     color: black;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-weight: 700;    
+    transition: 0.5s;    
+    font-size: 1.5em;
 }
 
 .navigation a:hover,
@@ -98,19 +105,21 @@ main {
 
 aside {
     background-color: var(--light-bg);
-    padding: 10px;
-    border-right: 2px solid black;
+    padding: 10px;    
     display: flex;
     flex-direction: column;
 }
 
 .hero {
-    padding: 10px;    
+    padding: 10px;
+    
 }
 
 .hero img {
+    
     width: 100%;
-    height: auto;  
+    height: auto;
+    
 }
 
 .cards {

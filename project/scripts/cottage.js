@@ -66,6 +66,12 @@ const breads = [
         imageUrl: "images/sourdoughcinnamonrolls.webp",        
     },
     {
+        breadName: "Chocolate Chip Cookies",
+        price: "$12.00", 
+        category: "Treats",
+        imageUrl: "images/cookies.webp",
+    },
+    {
         breadName: "Cake Pops",
         price: "$12.00", 
         category: "Treats",
