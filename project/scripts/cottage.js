@@ -51,20 +51,20 @@ treatslink.addEventListener("click", () => {
 const seasonalLink = document.querySelector("#seasonal");
 seasonalLink.addEventListener("click", () => {
     createBreadcard(breads.filter(bread => bread.category === "Seasonal"));
-})  
+})
 
 
 const breads = [
     {
         breadName: "Sweet Potato Round",
         price: "$18.00",
-        category: "Seasonal",        
+        category: "Seasonal",
         imageUrl: "images/sweetpotato.webp",
     },
     {
         breadName: "Sourdough Round",
         price: "$15.00",
-        category: "Bread",        
+        category: "Bread",
         imageUrl: "images/largeround.webp",
     },
     {
@@ -73,42 +73,49 @@ const breads = [
         category: "Bread",
         imageUrl: "images/smallrounds.webp",
     },
-    { 
+    {
         breadName: "Sourdough Loaf",
         price: "$15.00",
-        category: "Bread",        
+        category: "Bread",
         imageUrl: "images/sourdoughloaf.webp",
     },
     {
         breadName: "Sourdough Cinnamon Rolls",
-        price: "$15.00", 
+        price: "$15.00",
         category: "Treats",
-        imageUrl: "images/sourdoughcinnamonrolls.webp",        
+        imageUrl: "images/sourdoughcinnamonrolls.webp",
     },
     {
         breadName: "Chocolate Chip Cookies",
-        price: "$12.00", 
+        price: "$12.00",
         category: "Treats",
         imageUrl: "images/cookies.webp",
     },
     {
         breadName: "Cake Pops",
-        price: "$12.00", 
+        price: "$12.00",
         category: "Treats",
         imageUrl: "images/cakepops.webp",
     },]
 
-createBreadcard(breads);
+// Only run createBreadcard if the cards container exists (on index.html)
+const cardsContainer = document.querySelector('div.cards');
+if (cardsContainer) {
+    createBreadcard(breads);
+}
 
 function createBreadcard(filteredBreads) {
-    document.querySelector ('div.cards').innerHTML = "";
+    const cardsDiv = document.querySelector('div.cards');
+    if (!cardsDiv) return;  // Exit if cards div doesn't exist
+    
+    cardsDiv.innerHTML = "";
     filteredBreads.forEach(bread => {
         let card = document.createElement('section');
         let name = document.createElement("h2");
         let price = document.createElement("p");
         let category = document.createElement("p");
         let image = document.createElement("img");
-        
+
         name.textContent = bread.breadName;
         price.innerHTML = `<strong>Price:</strong> ${bread.price}`;
         category.innerHTML = `<strong>Category:</strong> ${bread.category}`;
@@ -125,7 +132,7 @@ function createBreadcard(filteredBreads) {
         card.appendChild(category);
 
 
-        document.querySelector('div.cards').appendChild(card);
+        cardsDiv.appendChild(card);
     });
 }
 
@@ -148,7 +155,7 @@ const products = [
     },
     {
         name: "Sourdough Loaf",
-        price: "$15.00",    
+        price: "$15.00",
         category: "Bread",
     },
     {
@@ -160,7 +167,7 @@ const products = [
         name: "Chocolate Chip Cookies",
         price: "$12.00",
         category: "Treats",
-    },      
+    },
     {
         name: "Cake Pops",
         price: "$12.00",
@@ -170,15 +177,21 @@ const products = [
 
 function populateProductDropdown() {
     const productSelect = document.getElementById("product-name");
+    console.log("Product select element:", productSelect);
+
     if (!productSelect) {
+        console.log("Product select not found!");
         return;
     }
 
+    console.log("Populating dropdown with", products.length, "products");
+
     products.forEach((product) => {
         const option = document.createElement("option");
-        option.value = product.price;
+        option.value = product.name;
         option.textContent = product.name;
         productSelect.appendChild(option);
+        console.log("Added product:", product.name);
     });
 }
 
