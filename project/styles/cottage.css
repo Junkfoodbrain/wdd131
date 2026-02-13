@@ -125,7 +125,7 @@ aside {
     position: absolute;
     top: 10%;
     left: 10%;
-    font-size: 3rem;
+    font-size: 2rem;
     color: whitesmoke;    
     text-shadow: 4px 4px 4px black;
 }
@@ -170,7 +170,7 @@ footer {
 }
 
 /* larger screen navigation menu*/
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 50em) {
 
     #cottage-title {
         font-size: 3rem;
@@ -195,5 +195,8 @@ footer {
 
     #menu {
         display: none;
+    }
+    .hero-title {
+        font-size: 4rem;
     }
 }
