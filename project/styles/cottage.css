@@ -125,6 +125,9 @@ aside {
     position: absolute;
     top: 10%;
     left: 10%;
+    font-size: 3rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -140,11 +143,7 @@ aside {
     height: auto;    
 }
 
-/* create hover effect for cards */
 
-/* .cards img:hover {
-    box-shadow: 0 0 50px #333;
-} */
 
 footer {
     background-color: var(--primary-color);
