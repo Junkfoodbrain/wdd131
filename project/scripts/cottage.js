@@ -128,3 +128,58 @@ function createBreadcard(filteredBreads) {
         document.querySelector('div.cards').appendChild(card);
     });
 }
+
+// product array
+const products = [
+    {
+        name: "Sweet Potato Round",
+        price: "$18.00",
+        category: "Seasonal",
+    },
+    {
+        name: "Sourdough Round",
+        price: "$15.00",
+        category: "Bread",
+    },
+    {
+        name: "Mini Rounds(2)",
+        price: "$15.00",
+        category: "Bread",
+    },
+    {
+        name: "Sourdough Loaf",
+        price: "$15.00",    
+        category: "Bread",
+    },
+    {
+        name: "Sourdough Cinnamon Rolls",
+        price: "$15.00",
+        category: "Treats",
+    },
+    {
+        name: "Chocolate Chip Cookies",
+        price: "$12.00",
+        category: "Treats",
+    },      
+    {
+        name: "Cake Pops",
+        price: "$12.00",
+        category: "Treats",
+    },
+];
+
+function populateProductDropdown() {
+    const productSelect = document.getElementById("product-name");
+    if (!productSelect) {
+        return;
+    }
+
+    products.forEach((product) => {
+        const option = document.createElement("option");
+        option.value = product.price;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", populateProductDropdown);

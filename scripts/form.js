@@ -33,7 +33,7 @@ const products = [
     {
         id: "fc-2050",
         name: "power laces",
-        averagerating: 4.7
+        averagerating: 4.7,
     },
     {
         id: "fs-1987",
@@ -49,7 +49,7 @@ const products = [
         id: "jj-1969",
         name: "warp equalizer",
         averagerating: 5.0
-    }
+    },
 ];
 
 function populateProductDropdown() {
