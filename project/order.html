@@ -33,12 +33,37 @@
     <main>
         <!-- <h1 class="order-title">Place Your Order</h1> -->
         <form method="get" action="confirmation.html">
+            <div class="name">
+                <label for="order-name" class="required">Your Name</label>
+                <input type="text" id="order-name" name="order-name" required>
+            </div>
             <div class="product">
                 <label for="product-name" class="required">Product Name</label>
-                <select id="product-name" name="product-name" required>
+                <select id="product-name" name="product-name" class="required">
                     <option value="" disabled selected>Select a product</option>
                 </select>
-            </div>            
+            </div>
+            <div class="checkbox">
+                <label class="required">Select A Payment Method</label>
+                <div class="input">
+                    <input type="radio" name="payment" id="delivery" value="delivery" required>
+                    <label for="delivery">Collect On Delivery                        
+                    </label>
+                    <input type="radio" name="payment" id="credit-card" value="credit-card" required>
+                    <label for="credit-card">Credit Card                        
+                    </label>
+                    <input type="radio" name="payment" id="paypal" value="paypal" required>
+                    <label for="paypal">PayPal                        
+                    </label>
+                    <input type="radio" name="payment" id="cash-on-pickup" value="cash-on-pickup" required>
+                    <label for="cash-on-pickup">Cash on Pick-up                        
+                    </label>
+                    <input type="radio" name="payment" id="bill-account" value="bill-account" required>
+                    <label for="bill-account">Bill My Account
+                    </label>
+                </div>
+            </div>
+            <button type="submit">Confirm Order</button>
         </form>
         
 
