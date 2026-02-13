@@ -83,7 +83,7 @@ const breads = [
         breadName: "Sourdough Cinnamon Rolls",
         price: "$15.00",
         category: "Treats",
-        imageUrl: "images/sourdoughcinnamonrolls.webp",
+        imageUrl: "images/cinnamonrolls.webp",
     },
     {
         breadName: "Jalapeno Cheddar Loaf",
