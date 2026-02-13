@@ -161,6 +161,48 @@ span.orders {
     text-align: center;
 }
 
+div.checkbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.address input[type="text"] {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.name input[type="text"] {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+#catering-name input[type="text"] {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    justify-content: center;    
+}
+
+.required::after {
+    content: "*";
+    color: rgb(143, 4, 4);
+    font-weight: bold;
+}
+
+button {
+    font-size: 2em;
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: rgb(222, 222, 131);
+    justify-content: center;
+}
+
 
 
 
