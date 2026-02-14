@@ -116,6 +116,16 @@ aside {
     flex-direction: column;       
 }
 
+.subscribe {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: var(--accent-color);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
 .hero {
     padding: 5px;
     position: relative;
