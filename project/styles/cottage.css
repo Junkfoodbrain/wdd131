@@ -1,6 +1,6 @@
 :root {
-    --primary-color: #87Aeab;
-    --accent-color: #EF7E09;
+    --primary-color: #87aeab;
+    --accent-color: #ef7e09;
     --background-color: #e9c69c;
     --light-bg: #f7cc61;
     --border-width: 0.5rem;
@@ -11,7 +11,7 @@
 
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color);      
 }
 
 #cottage-title {
@@ -112,7 +112,7 @@ aside {
     background-color: var(--light-bg);
     padding: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .hero {
@@ -123,7 +123,7 @@ aside {
 .hero img {
     width: 100%;
     height: auto;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .hero-title {
