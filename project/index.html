@@ -52,9 +52,12 @@
         </aside>
         <div class="content">
             <div class="hero">
-                <img src="images/sourdough.webp" class="hero-image" alt="Hero image of bakery items from The Apricot Cottage">
-                <h1 class="hero-title">Take a look at our delicious menu:</h1>
-                <form method="get" action="index.html"></form>
+                <picture>
+                    <source srcset="images/sourdough.webp" class="hero-image" media="(min-width: 50em)">
+                    <img src="images/oven-small.webp" class="hero-image" alt="Hero image of bakery items from The Apricot Cottage">
+                    <h1 class="hero-title">Take a look at our delicious menu:</h1>
+                </picture>
+                    <form method="get" action="index.html"></form>                
             </div>                   
             <div class="cards">
                 <!-- Bread, Treats, and Seasonal items will be dynamically generated here by JavaScript -->
