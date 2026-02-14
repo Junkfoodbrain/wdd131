@@ -25,14 +25,27 @@ if (orders !== 0) {
     orders = 1;
 }
 
+// visit counter
 window.localStorage.setItem("orders-ls", orders);
-
 
 const ordersE1 = document.querySelector(".orders");
 if (ordersE1) {
     ordersE1.textContent = orders;
+    
 }
 
+let visits = Number(window.localStorage.getItem("visits-ls")) || 0;
+if (visits !== 0) {
+    visits += 1;
+} else {
+    visits = 1;
+}
+window.localStorage.setItem("visits-ls", visits);
+
+const visitsE1 = document.querySelector(".visits");
+if (visitsE1) {
+    visitsE1.textContent = visits;
+}
 
 
 // bread
