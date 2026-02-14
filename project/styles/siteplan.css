@@ -1,8 +1,6 @@
-:root {
-    /* --primary-color: #607B79; */
+:root {    
     --primary-color: #87Aeab;
-    --accent-color: #EF7E09;
-    /* --background-color: #B89C79; */
+    --accent-color: #EF7E09;    
     --background-color: #e9c69c;
     --light-bg: #f7cc61;          
     --border-width: 0.5rem;
