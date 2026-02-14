@@ -166,6 +166,10 @@ span.orders {
     text-align: center;
 }
 
+label {
+    font-weight: bold;
+}
+
 div.checkbox {
     display: block;
     margin-top: 1rem;
@@ -219,7 +223,7 @@ button {
     display: flex;
     width: 100%;
     padding: 0.5rem;
-    background-color: rgb(222, 222, 131);
+    background-color: var(--accent-color);
     justify-content: center;
 }
 
