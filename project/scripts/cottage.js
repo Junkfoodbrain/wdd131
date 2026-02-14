@@ -16,35 +16,34 @@ function toggleActive(element) {
     element.classList.toggle("active");
 }
 
-// setting up orders counter
-let orders = Number(window.localStorage.getItem("orders-ls")) || 0;
-
-if (orders !== 0) {
-    orders += 1;
-} else {
-    orders = 1;
+// Order form submission counter (only on order.html)
+const orderForm = document.querySelector('form[action="confirmation.html"]');
+if (orderForm) {
+    orderForm.addEventListener('submit', () => {
+        let orders = Number(window.localStorage.getItem("orders-ls")) || 0;
+        orders += 1;
+        window.localStorage.setItem("orders-ls", orders);
+    });
 }
 
-// visit counter
-window.localStorage.setItem("orders-ls", orders);
-
+// Display orders count (on confirmation.html)
 const ordersE1 = document.querySelector(".orders");
 if (ordersE1) {
+    const orders = Number(window.localStorage.getItem("orders-ls")) || 0;
     ordersE1.textContent = orders;
-    
 }
 
-let visits = Number(window.localStorage.getItem("visits-ls")) || 0;
-if (visits !== 0) {
+// Visit counter (only on index.html)
+const cardsContainerCheck = document.querySelector('div.cards');
+if (cardsContainerCheck) {
+    let visits = Number(window.localStorage.getItem("visits-ls")) || 0;
     visits += 1;
-} else {
-    visits = 1;
-}
-window.localStorage.setItem("visits-ls", visits);
-
-const visitsE1 = document.querySelector(".visits");
-if (visitsE1) {
-    visitsE1.textContent = visits;
+    window.localStorage.setItem("visits-ls", visits);
+    
+    const visitsE1 = document.querySelector(".visits");
+    if (visitsE1) {
+        visitsE1.textContent = visits;
+    }
 }
 
 
