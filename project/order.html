@@ -30,7 +30,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="order-page">
         <!-- <h1 class="order-title">Place Your Order</h1> -->
         <form method="get" action="confirmation.html">
             <div class="name">
@@ -52,19 +52,19 @@
                 <input type="date" id="delivery-date" name="delivery-date" required>
             </div>
             <div class="checkbox">
-                <label class="required">Select A Payment Method</label>
+                <label class="required">Select A Payment</label>
                 <div class="input">
                     <input type="radio" name="payment" id="delivery" value="delivery" required>
-                    <label for="delivery">Collect On Delivery                        
+                    <label for="delivery">Collect On Delivery
                     </label>
                     <input type="radio" name="payment" id="credit-card" value="credit-card" required>
-                    <label for="credit-card">Credit Card                        
+                    <label for="credit-card">Credit Card
                     </label>
                     <input type="radio" name="payment" id="paypal" value="paypal" required>
-                    <label for="paypal">PayPal                        
+                    <label for="paypal">PayPal
                     </label>
                     <input type="radio" name="payment" id="cash-on-pickup" value="cash-on-pickup" required>
-                    <label for="cash-on-pickup">Cash on Pick-up                        
+                    <label for="cash-on-pickup">Cash on Pick-up
                     </label>
                     <input type="radio" name="payment" id="bill-account" value="bill-account" required>
                     <label for="bill-account">Bill My Account
@@ -72,20 +72,17 @@
                 </div>
             </div>
             <div class="events">
-                <label for="catering">Ask the baker about catering your next event!<span class="optional"></span></label>
-                <input type="text" id="catering" name="catering" required>
+                <label for="catering">Ask the baker about catering your next event!</label>
+                <textarea id="catering" name="catering" rows="5"></textarea>
+
             </div>
             <button type="submit">Place Order</button>
         </form>
-        
-
-
-
     </main>
     <footer>
         <p>&copy; 2026 Leah Sorensen - California 🌴</p>
         <p>The Apricot Cottage - WDD 131 | Final Project</p>
-        <p>Last Modified: <span id="lastmodified"></span></p>        
+        <p>Last Modified: <span id="lastmodified"></span></p>
     </footer>
 </body>
 
