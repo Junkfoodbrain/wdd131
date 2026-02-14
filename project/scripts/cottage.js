@@ -42,12 +42,32 @@ if (cardsContainerCheck) {
     
     const visitsE1 = document.querySelector(".visits");
 
-    
+
     if (visitsE1) {
         visitsE1.textContent = visits;
     }
 }
 
+// Newsletter email tracker (only on index.html)
+const newsletterForm = document.querySelector('fieldset form');
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+        
+        const emailInput = document.getElementById('newsletter-email');
+        const email = emailInput.value;        
+        
+        let emails = JSON.parse(window.localStorage.getItem("newsletter-emails")) || [];        
+        
+        emails.push(email);        
+        
+        window.localStorage.setItem("newsletter-emails", JSON.stringify(emails));        
+        
+        alert(`Thanks for signing up, ${email}!`);        
+        
+        emailInput.value = '';
+    });
+}
 
 // bread
 const breadlink = document.querySelector("#bread");
