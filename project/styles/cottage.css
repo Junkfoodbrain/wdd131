@@ -99,8 +99,7 @@ h1 {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: block;
 }
 
 .order-page {
@@ -234,6 +233,11 @@ footer {
 
 /* larger screen navigation menu*/
 @media only screen and (min-width: 50em) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
 
     #cottage-title {
         font-size: 3rem;
