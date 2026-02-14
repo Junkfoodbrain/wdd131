@@ -12,7 +12,7 @@
 
 header {
     background-color: var(--primary-color); 
-    border-bottom: black 2px solid;       
+    border-bottom: #bb6407 2px solid;       
 }
 
 #cottage-title {
@@ -232,6 +232,7 @@ footer {
     background-color: var(--primary-color);
     text-align: center;
     color: black;
+    border-top: #bb6407 2px solid;
 }
 
 /* larger screen navigation menu*/
