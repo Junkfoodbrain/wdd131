@@ -96,6 +96,7 @@ h1 {
     color: black;
     font-size: 1.5rem;
     padding: var(--padding-base);
+    text-align: center;
 }
 
 main {
