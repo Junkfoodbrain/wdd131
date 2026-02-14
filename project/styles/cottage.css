@@ -113,11 +113,12 @@ aside {
     background-color: var(--light-bg);
     padding: 10px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    font-size: 1.5em;   
 }
 
 .hero {
-    padding: 1px;
+    padding: 5px;
     position: relative;
 }
 
