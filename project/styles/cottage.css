@@ -116,6 +116,23 @@ aside {
     flex-direction: column;       
 }
 
+.visits {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+
+fieldset {
+    border: var(--border-width) solid #bb6407;
+    padding: var(--padding-base);
+    margin-top: var(--padding-base);
+}
+
+.signup {
+    font-weight: bold;
+}
+
 .subscribe {
     display: block;
     margin-top: 1rem;
@@ -227,6 +244,10 @@ div.checkbox {
     content: "*";
     color: rgb(143, 4, 4);
     font-weight: bold;
+}
+
+#product-name, #delivery-date {
+    font-size: 1.5rem;
 }
 
 button {
