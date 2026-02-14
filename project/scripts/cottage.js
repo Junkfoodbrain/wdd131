@@ -41,6 +41,8 @@ if (cardsContainerCheck) {
     window.localStorage.setItem("visits-ls", visits);
     
     const visitsE1 = document.querySelector(".visits");
+
+    
     if (visitsE1) {
         visitsE1.textContent = visits;
     }
